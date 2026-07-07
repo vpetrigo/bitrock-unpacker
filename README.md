@@ -5,8 +5,8 @@
 
 # BitRock unpacker prototype
 
-`bitrock_unpacker` is a stdlib-only Python prototype for BitRock/InstallBuilder
-installers without Tcl/TclKit.
+`bitrock_unpacker` is a module for extracting content of BitRock/InstallBuilder installers
+without Tcl/TclKit.
 
 I created that repo since I was not able to run original Tcl unpacker
 from [here](https://gist.github.com/mickael9/0b902da7c13207d1b86e) on Windows.
