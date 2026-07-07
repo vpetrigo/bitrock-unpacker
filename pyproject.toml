@@ -46,5 +46,10 @@ python = ["3.11", "3.12", "3.13", "3.14"]
 [tool.hatch.envs.test.scripts]
 run = "pytest {args:tests}"
 
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+]
+
 [tool.setuptools]
 packages = ["bitrock_unpacker"]
