@@ -54,7 +54,6 @@ The `pyproject.toml` metadata exposes the `bitrock-unpacker` console script, so
 the same CLI can be checked through `uv run` without installing it globally:
 
 ```powershell
-python -m bitrock_unpacker --self-test
 python -m bitrock_unpacker <installer.exe> --manifest-only --debug
 python -m bitrock_unpacker <installer.exe> --list-pages --limit 5
 python -m bitrock_unpacker <installer.exe> --list-files --limit 10
@@ -92,5 +91,4 @@ Validate the project metadata and run the self-test:
 ```powershell
 python -c "import tomllib; tomllib.load(open('pyproject.toml','rb')); print('pyproject: ok')"
 python -m py_compile bitrock_unpacker\*.py
-python -m bitrock_unpacker --self-test
 ```
