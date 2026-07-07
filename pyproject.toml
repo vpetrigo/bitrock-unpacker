@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 keywords = [
-    "pytest", "plugin", "markdown"
+    "bitrock", "installbuilder", "unpacker"
 ]
 authors = [
     { name = "Vladimir Petrigo", email = "vladimir.petrigo@gmail.com" },
