@@ -102,7 +102,7 @@ def parse_cookfsinfo(text: str) -> dict[str, str]:
 def find_cookfsinfo(data: bytes, overlay_start: int) -> CookFSInfo:
     hay = data[overlay_start:]
     m = re.search(
-        rb"dist-endoffset\s+(\d+).*?-pagecachesize\s+(\d+).*?-decompresscommand\s+([A-Za-z0-9_+-]+)",
+        rb"dist-endoffset\s+(\d+).*?-pagecachesize\s+(\d+).*?-decompresscommand\s+(\S+)",
         hay,
         re.DOTALL,
     )
