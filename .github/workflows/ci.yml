@@ -54,7 +54,7 @@ jobs:
           enable-cache: true
 
       - name: Install Hatch
-        run: uv tool install "git+https://github.com/vpetrigo/hatch@fix/hardcoded-reliance-on-pip"
+        run: uv tool install hatch
 
       - name: Run format check
         run: hatch check fmt
@@ -83,7 +83,7 @@ jobs:
           enable-cache: true
 
       - name: Install Hatch
-        run: uv tool install "git+https://github.com/vpetrigo/hatch@fix/hardcoded-reliance-on-pip" --with hatch-pip-compile
+        run: uv tool install hatch
 
       - name: Run tests
         run: hatch run +py=${{ matrix.python-version }} test:run
