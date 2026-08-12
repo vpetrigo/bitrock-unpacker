@@ -30,7 +30,7 @@ jobs:
           enable-cache: true
 
       - name: Install Hatch
-        run: uv tool install "git+https://github.com/vpetrigo/hatch@fix/hardcoded-reliance-on-pip"
+        run: uv tool install hatch
 
       - name: Run linting
         run: hatch check code
